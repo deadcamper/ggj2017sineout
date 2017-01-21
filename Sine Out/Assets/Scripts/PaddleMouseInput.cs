@@ -6,6 +6,8 @@ public class PaddleMouseInput : MonoBehaviour {
 
     private Camera mainCamera;
 
+    public Collider2D leftWall, rightWall;
+
     private float yPosition;
 
 	// Use this for initialization
@@ -25,8 +27,13 @@ public class PaddleMouseInput : MonoBehaviour {
 
             Vector3 paddlePos = transform.position;
 
+            Vector3 paddleSize = transform.localScale;
+
             paddlePos.x = worldMousePos.x;
+            paddlePos.x = Mathf.Clamp(paddlePos.x, leftWall.bounds.max.x + paddleSize.x/2, rightWall.bounds.min.x - paddleSize.x / 2);
+
             transform.position = paddlePos;
         }
     }
+
 }
