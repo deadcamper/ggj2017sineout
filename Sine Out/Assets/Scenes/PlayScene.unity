@@ -137,6 +137,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5a1d8468e79a4e0fa3f5bc890bfd265, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &117702772 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1562269060491802, guid: d5a1d8468e79a4e0fa3f5bc890bfd265,
+    type: 2}
+  m_PrefabInternal: {fileID: 117702771}
 --- !u!1 &325267199
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +348,7 @@ Prefab:
         type: 2}
       propertyPath: bricks
       value: 
-      objectReference: {fileID: 1099883951}
+      objectReference: {fileID: 117702772}
     - target: {fileID: 224759258813797936, guid: a3220896d553d5f4c8162adce0e913e3,
         type: 2}
       propertyPath: m_AnchorMin.y
@@ -470,11 +475,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1099883951 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1754190249940564, guid: d5a1d8468e79a4e0fa3f5bc890bfd265,
-    type: 2}
-  m_PrefabInternal: {fileID: 117702771}
 --- !u!4 &1154613934 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4217136349314834, guid: 8d86f7714fb27468b9d1bfe53d99dee6,
@@ -566,7 +566,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1167746110
 MonoBehaviour:
