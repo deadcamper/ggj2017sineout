@@ -98,8 +98,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sinePeriod: 10
-  sineMultiplier: 0.05
+  sineMultiplier: 0.2
   ignoreWaveChange: 0
+  breakSound: event:/Sounds/break
 --- !u!212 &212517135244912032
 SpriteRenderer:
   m_ObjectHideFlags: 1

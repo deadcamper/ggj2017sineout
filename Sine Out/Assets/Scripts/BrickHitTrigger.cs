@@ -7,6 +7,8 @@ public class BrickHitTrigger : MonoBehaviour {
 	public float sinePeriod = 1;
 	public float sineMultiplier = 1;
 	public bool ignoreWaveChange = true;
+	[FMODUnity.EventRef]
+	public string breakSound = "event:/Sounds/break";
 
 	void Start () {
 		
@@ -20,7 +22,12 @@ public class BrickHitTrigger : MonoBehaviour {
 		gameObject.SetActive(false);
 		Ball ball = collision.gameObject.GetComponent<Ball>();
 		if (ball != null) {
+
+			// Play break sound
+			FMODUnity.RuntimeManager.PlayOneShot (breakSound);
 			if (!ignoreWaveChange) {
+
+				// Turn wave on
 				ball.turnSineWaveOn ();
 				ball.setWaveLength (sinePeriod, sineMultiplier);
 			}
