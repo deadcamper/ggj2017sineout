@@ -17,7 +17,6 @@ public class LoseGameTrigger : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D collision) {
 		GameObject ball = collision.gameObject;
 		if (ball.tag.Equals("Ball")) {
-			Debug.Log("Ball found.");
 			gameOverScreen.enabled = true;
 		}
 	}
