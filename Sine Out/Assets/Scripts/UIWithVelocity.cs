@@ -20,6 +20,11 @@ public class UIWithVelocity : MonoBehaviour {
 
         position = position + (Vector3)(velocity) * Time.fixedDeltaTime;
 
-        rect.position = position;
+		if (rect.position.x < -10f) {
+			position.x = 10;
+			rect.position = position;
+		} else {
+			rect.position = position; 
+		} 
 	}
 }
