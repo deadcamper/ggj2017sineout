@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using FMODUnity;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,14 +25,25 @@ public class BrickTrigger : MonoBehaviour {
 		Ball ball = collision.gameObject.GetComponent<Ball>();
 		if (ball != null) {
 
-			// Play break sound
-			FMODUnity.RuntimeManager.PlayOneShot (breakSound);
-			if (!ignoreWaveChange) {
+            if (!ignoreWaveChange)
+            {
 
-				// Turn wave on
-				ball.turnSineWaveOn ();
-				ball.setWaveLength (sinePeriod, sineMultiplier);
-			}
+                // Turn wave on
+                ball.turnSineWaveOn();
+                ball.setWaveLength(sinePeriod, sineMultiplier);
+            }
+
+            // Play break sound
+            try
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(breakSound);
+            }
+            catch (Exception enfe)
+            {
+                Debug.LogWarning("Bad sound :" + breakSound);
+            }
+            
+
 		}
 	}
 }

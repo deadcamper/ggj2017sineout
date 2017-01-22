@@ -1,0 +1,5 @@
+{2ed55321-0355-4c25-8147-3d352de157a9} event:/Sounds/bounce
+{644da3fd-417f-4248-b598-7d0e091ac6c0} event:/Sounds/break
+{5908d9bb-fc79-47b1-909e-cea9dc1a7a04} bus:/
+{6cf7da78-aba4-4b54-88ed-97249ed5a176} bus:/Reverb
+{a6d5c99e-ef9c-4c48-96a0-67c045e87782} bank:/Master Bank

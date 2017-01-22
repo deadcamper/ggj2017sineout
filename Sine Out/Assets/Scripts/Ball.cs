@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using FMODUnity;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -61,6 +63,6 @@ public class Ball : MonoBehaviour {
     
     void OnCollisionEnter2D(Collision2D collision)
     {
-		FMODUnity.RuntimeManager.PlayOneShot (bounceSound);
+        FMODUnity.RuntimeManager.PlayOneShot(bounceSound);
     }
 }

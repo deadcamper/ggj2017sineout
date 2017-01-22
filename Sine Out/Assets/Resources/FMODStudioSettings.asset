@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  SourceProjectPath: /Users/NateBass/Desktop/sineout_audio/Sineout.fspro
-  SourceBankPath: /Users/NateBass/Desktop/sineout_audio/Build
+  SourceProjectPath: Assets\FMOD\Sineout.fspro
+  SourceBankPath: Assets\FMOD\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
     Value: 0
   OverlaySettings:
   - Platform: 1
-    Value: 1
+    Value: 0
   - Platform: 2
     Value: 0
   LoggingSettings:
