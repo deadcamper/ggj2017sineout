@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BrickHitTrigger : MonoBehaviour {
+public class BrickTrigger : MonoBehaviour {
 
 	public float sinePeriod = 1;
 	public float sineMultiplier = 1;
