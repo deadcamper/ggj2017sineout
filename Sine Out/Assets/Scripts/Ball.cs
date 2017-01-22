@@ -11,23 +11,21 @@ public class Ball : MonoBehaviour {
     public float sineMultiplier = 1;
 
     private Rigidbody2D body;
+	private bool sineWaveTurnedOn = false;
 
     float time = 0f;
 
-	// Use this for initialization
 	void Start () {
         body = GetComponent<Rigidbody2D>();
 
         body.velocity = initialVelocity;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
         
-
     }
 
-    private void SinWave()
+    private void SineWave()
     {
         Vector3 currentMotion = body.velocity;
 
@@ -46,8 +44,17 @@ public class Ball : MonoBehaviour {
 
     void FixedUpdate()
     {
-        SinWave();
+		if (sineWaveTurnedOn) SineWave();
     }
+
+	public void setWaveLength(float period,float multiplier) {
+		this.sinePeriod = period;
+		this.sineMultiplier = multiplier;
+	}
+
+	public void turnSineWaveOn() {
+		sineWaveTurnedOn = true;
+	}
 
     /*
     void OnCollisionEnter2D(Collision2D collision)

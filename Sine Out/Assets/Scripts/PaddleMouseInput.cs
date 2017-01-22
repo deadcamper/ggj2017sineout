@@ -10,14 +10,12 @@ public class PaddleMouseInput : MonoBehaviour {
 
     private float yPosition;
 
-	// Use this for initialization
 	void Start () {
         mainCamera = Camera.main;
 
         yPosition = transform.position.y;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 
         if (Input.mousePresent)

@@ -18,13 +18,11 @@ public class SplashFade : MonoBehaviour {
 
     private Image fade;
 
-	// Use this for initialization
 	void Start () {
         fade = GetComponent<Image>();
         isFadingIn = true;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
         if (isFadingIn)
         {
