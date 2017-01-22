@@ -18,7 +18,7 @@ public class UIWithVelocity : MonoBehaviour {
 	void FixedUpdate () {
         Vector3 position = rect.position;
 
-        position = position + (Vector3)(velocity) * Time.fixedDeltaTime * 10;
+        position = position + (Vector3)(velocity) * Time.fixedDeltaTime;
 
 		if (rect.position.x < -15f) {
 			position.x = 15f;
