@@ -13,10 +13,8 @@ public class MusicPlayer : MonoBehaviour {
 
 	void Start () {
 		musicEv = FMODUnity.RuntimeManager.CreateInstance(music); 
-		FMOD.Studio.PLAYBACK_STATE play_state;
-		musicEv.getPlaybackState (out play_state);
 
-		// Start music at medium
+		// Start music at medium speed
 		changeMusic (1);
 	}
 
@@ -49,6 +47,8 @@ public class MusicPlayer : MonoBehaviour {
 	}
 
 	public void startMusic() {
+		FMOD.Studio.PLAYBACK_STATE play_state;
+		musicEv.getPlaybackState (out play_state);
 		// Start music if it is not already playing	
 		if (play_state != FMOD.Studio.PLAYBACK_STATE.PLAYING) {
 			musicEv.start ();
