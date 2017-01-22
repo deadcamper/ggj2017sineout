@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114175956163765984}
-  - {fileID: 114540337047032546}
+  - {fileID: 114661273389662454}
+  - {fileID: 114147860214390378}
   EditorEvents:
-  - {fileID: 114638961386825590}
-  - {fileID: 114908315597880528}
-  - {fileID: 114629242856122292}
-  MasterBankRef: {fileID: 114540337047032546}
-  StringsBankRef: {fileID: 114175956163765984}
-  stringsBankWriteTime: 636206184040000000
+  - {fileID: 114672198502119692}
+  - {fileID: 114166833658052012}
+  - {fileID: 114273963541669452}
+  MasterBankRef: {fileID: 114147860214390378}
+  StringsBankRef: {fileID: 114661273389662454}
+  stringsBankWriteTime: 636206860060000000
   cacheVersion: 2
 --- !u!114 &114007611117880268
 MonoBehaviour:
@@ -52,6 +52,64 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114133570105123420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fast Speed
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114147860214390378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/NateBass/A/ggj2017sineout/Sine Out/Assets/FMOD/Build/Desktop/Master
+    Bank.bank
+  lastModified: 636206860060000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1062176
+  Exists: 1
+--- !u!114 &114166833658052012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Level 1
+  guid: 3cfd1294a5554b40bf1e114b937fd6ab
+  Banks:
+  - {fileID: 114147860214390378}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114133570105123420}
+  - {fileID: 114588705918347690}
+  - {fileID: 114276298461180458}
+  MinDistance: 1
+  MaxDistance: 20
 --- !u!114 &114175956163765984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,6 +146,42 @@ MonoBehaviour:
   - Name: Desktop
     Value: 776
   Exists: 1
+--- !u!114 &114273963541669452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Sounds/break
+  guid: fda34d647f414842b5987d0e091ac6c0
+  Banks:
+  - {fileID: 114147860214390378}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+--- !u!114 &114276298461180458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Medium Speed
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114327778373576628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,6 +285,21 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1062176
   Exists: 1
+--- !u!114 &114588705918347690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Slow Speed
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114619515116845358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +356,61 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: 114829905414990748}
+  MinDistance: 1
+  MaxDistance: 20
+--- !u!114 &114653302103826218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Paddle L-R
+  Min: 0
+  Max: 2
+  Default: 0
+--- !u!114 &114661273389662454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Master Bank.strings.bank
+  lastModified: 636206860060000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 776
+  Exists: 1
+--- !u!114 &114672198502119692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Sounds/bounce
+  guid: 2153d52e5503254c81473d352de157a9
+  Banks:
+  - {fileID: 114147860214390378}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 114653302103826218}
   MinDistance: 1
   MaxDistance: 20
 --- !u!114 &114818262406414256
