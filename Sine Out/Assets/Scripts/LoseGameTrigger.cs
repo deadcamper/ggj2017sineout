@@ -6,12 +6,10 @@ public class LoseGameTrigger : MonoBehaviour {
 
 	public Canvas gameOverScreen;
 
-	// Use this for initialization
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		
 	}
