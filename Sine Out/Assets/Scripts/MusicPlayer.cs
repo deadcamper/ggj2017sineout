@@ -28,20 +28,20 @@ public class MusicPlayer : MonoBehaviour {
 
 	public void changeMusic(float period) {
 		// Set the intensity of the music based on the wave length
-		if (period < 1) {
-			
+		if (period <= .06) {
+			Debug.Log ("Slow");
 			slowSpeedParam.setValue (1);
 			mediumSpeedParam.setValue (0);
 			fastSpeedParam.setValue (0);
 		}
-		if (period >= 1 && period < 2) {
-			
+		if (period >= .07 && period < .11) {
+			Debug.Log ("Medium");
 			slowSpeedParam.setValue (0);
 			mediumSpeedParam.setValue (1);
 			fastSpeedParam.setValue (0);
 		}
-		if (period >= 2) {
-			
+		if (period >= .19) {
+			Debug.Log ("Fast");
 			slowSpeedParam.setValue (0);
 			mediumSpeedParam.setValue (0);
 			fastSpeedParam.setValue (1);

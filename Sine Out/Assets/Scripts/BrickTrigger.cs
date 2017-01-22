@@ -11,9 +11,10 @@ public class BrickTrigger : MonoBehaviour {
 	public bool ignoreWaveChange = true;
 	[FMODUnity.EventRef]
 	public string breakSound = "event:/Sounds/break";
+	private MusicPlayer musicPlayer;
 
 	void Start () {
-		
+		musicPlayer = GameObject.FindObjectOfType<MusicPlayer> ();
 	}
 
 	void Update () {
@@ -31,6 +32,7 @@ public class BrickTrigger : MonoBehaviour {
                 // Turn wave on
                 ball.turnSineWaveOn();
                 ball.setWaveLength(sinePeriod, sineMultiplier);
+				musicPlayer.changeMusic (sineMultiplier);
             }
 
             // Play break sound
