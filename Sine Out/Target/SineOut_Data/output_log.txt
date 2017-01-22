@@ -19,27 +19,27 @@ Platform assembly: C:\Users\ddnewel\workspace\gamejam\ggj2017sineout\Sine Out\Ta
 Loading C:\Users\ddnewel\workspace\gamejam\ggj2017sineout\Sine Out\Target\SineOut_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\ddnewel\workspace\gamejam\ggj2017sineout\Sine Out\Target\SineOut_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\Users\ddnewel\workspace\gamejam\ggj2017sineout\Sine Out\Target\SineOut_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.264 seconds
+- Completed reload, in  0.027 seconds
 Platform assembly: C:\Users\ddnewel\workspace\gamejam\ggj2017sineout\Sine Out\Target\SineOut_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\ddnewel\workspace\gamejam\ggj2017sineout\Sine Out\Target\SineOut_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.419381 ms
+UnloadTime: 1.357799 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.169621 ms
+UnloadTime: 3.353230 ms
 FMOD Studio: Creating runtime system instance
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 396.
-Total: 0.266428 ms (FindLiveObjects: 0.026514 ms CreateObjectMapping: 0.019244 ms MarkObjects: 0.205701 ms  DeleteObjects: 0.014540 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 790.
+Total: 0.417817 ms (FindLiveObjects: 0.053456 ms CreateObjectMapping: 0.045758 ms MarkObjects: 0.305344 ms  DeleteObjects: 0.012829 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2bc8 -> priority: 1 
-  Thread -> id: 32d8 -> priority: 1 
+  Thread -> id: 2294 -> priority: 1 
+  Thread -> id: 3b24 -> priority: 1 
 FMOD Studio: Destroying runtime system instance
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)

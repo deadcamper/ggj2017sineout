@@ -42,8 +42,15 @@ public class BrickTrigger : MonoBehaviour {
             {
                 Debug.LogWarning("Bad sound :" + breakSound);
             }
-            
-
 		}
+
+        //Check if other bricks still exist.
+        BrickTrigger trig = transform.parent.gameObject.GetComponentInChildren<BrickTrigger>();
+
+        //If not, you win!
+        if (trig == null)
+        {
+            GameObject.FindObjectOfType<GameUIController>().WinGame();
+        }
 	}
 }
