@@ -50,4 +50,10 @@ public class MusicPlayer : MonoBehaviour {
 			fastSpeedParam.setValue (1);
 		}
 	}
+
+    public void KillMusic()
+    {
+        musicEv.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        musicEv.release (); //can be called if the music does not need to be switched on again.
+    }
 }

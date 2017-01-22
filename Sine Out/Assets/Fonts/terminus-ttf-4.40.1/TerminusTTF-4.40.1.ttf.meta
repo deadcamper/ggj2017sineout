@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 535421814ec9c824d97dfb08f5ecce11
+timeCreated: 1485118135
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Terminus (TTF)
+  fontNames:
+  - Terminus (TTF)
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 372e1ad4d1e8e3f4fa36663371b728e6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

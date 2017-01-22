@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class LoseGameTrigger : MonoBehaviour {
 
-	public Canvas gameOverScreen;
+    public GameUIController gameUI;
 
 	void Start () {
-		
+        gameUI = GameObject.FindObjectOfType<GameUIController>();
 	}
 
 	void Update () {
@@ -17,8 +17,7 @@ public class LoseGameTrigger : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D collision) {
 		GameObject ball = collision.gameObject;
 		if (ball.tag.Equals("Ball")) {
-			Debug.Log("Ball found.");
-			gameOverScreen.enabled = true;
-		}
+            gameUI.LoseGame();
+        }
 	}
 }
